@@ -10,4 +10,9 @@ let config = {
         messagingSenderId: "721898395595"
 };
 
+//Iniciando a ligação com o firebase
 const app = firebase.initializeApp(config);
+
+//Separando os serviços
+export const auth = app.auth();
+export const db = app.firestore();
